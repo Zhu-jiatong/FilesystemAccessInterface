@@ -1,0 +1,3 @@
+[submodule "src/AccessPermissionManager"]
+	path = src/AccessPermissionManager
+	url = ../AccessPermissionManager
