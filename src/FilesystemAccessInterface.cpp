@@ -24,7 +24,7 @@ File FilesystemAccessInterface::openFile(const String &username, const String &p
 void FilesystemAccessInterface::deleteFile(const String &username, const String &path)
 {
 	if (!canUserAccessFile(username, path, Permission::WRITE))
-		throw std::runtime_error((username + " does not have delete access to " + path).c_str());
+		throw std::runtime_error((username + " does not have write access to " + path).c_str());
 
 	File root = _fs.open(path);
 	if (!root)
