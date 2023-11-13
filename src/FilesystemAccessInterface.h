@@ -3,7 +3,7 @@
 
 #include <Arduino.h>
 #include <FS.h>
-#include "AccessPermissionManager/src/AccessPermissionManager.h"
+#include <AccessPermissionManager.h>
 
 class FilesystemAccessInterface : public AccessPermissionManager
 {
